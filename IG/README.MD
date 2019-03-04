@@ -1,0 +1,1 @@
+This directory will be occupied when the py file 'export_inference_graph' is executed in the third step.

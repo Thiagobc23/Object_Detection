@@ -1,0 +1,1 @@
+This directory will be occupied when the py file 'train' is executed in the second step.
