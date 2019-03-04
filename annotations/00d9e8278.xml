@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imgs</folder>
+	<filename>00d9e8278.jpg</filename>
+	<path>C:\py\ObjDetection\imgs\00d9e8278.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>whale_tail</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>127</ymin>
+			<xmax>877</xmax>
+			<ymax>346</ymax>
+		</bndbox>
+	</object>
+</annotation>
