@@ -5,7 +5,9 @@ Code was addapted from several other repositories, but mainly they are files fro
 The objective was to use inception.v2 to create a object detection model that could detect whale tails. 
 
 ## References and Requirements
-Original files can be found at [Tensorflow Models](https://github.com/tensorflow/models), this library is also needed for running most of the python scripts in this project and for other resources.
+Original files can be found at [Tensorflow Models](https://github.com/tensorflow/models), this library is also needed for running most of the python scripts in this project and for other resources.  
+
+Dataset was extracted from [kaggle](https://www.kaggle.com/c/humpback-whale-identification)  
 
 [Object Detection Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)  
 [Google Protobuf](https://github.com/protocolbuffers/protobuf)
