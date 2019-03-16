@@ -7,7 +7,7 @@ The objective was to use inception.v2 to create a object detection model that co
 ## References and Requirements
 Original files can be found at [Tensorflow Models](https://github.com/tensorflow/models), this library is also needed for running most of the python scripts in this project and for other resources.
 
-[Object Detection Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+[Object Detection Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)  
 [Google Protobuf](https://github.com/protocolbuffers/protobuf)
 
 Imports:  
