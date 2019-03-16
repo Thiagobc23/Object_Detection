@@ -50,7 +50,7 @@ Paths need to be defined according to your setup
 **trained_checkpoint_prefix** -> Last checkpoint model for this project we used project directory/train/model.ckpt-500, the numerical value at the end should match the checkpoint you are using to build the inference graph.  
 **output_directory** -> Path to where the script will output the new model, for this project we used project directory/IG  
 
-
+---
 Testing scripts were based on the ones available at Priya Dwivedi [GIT](https://github.com/priya-dwivedi/Deep-Learning)
 
 ## 4_test.py  
