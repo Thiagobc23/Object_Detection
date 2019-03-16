@@ -77,13 +77,13 @@ flags = tf.app.flags
 flags.DEFINE_string('input_type', 'image_tensor', 'Type of input node. Can be '
                     'one of [`image_tensor`, `encoded_image_string_tensor`, '
                     '`tf_example`]')
-flags.DEFINE_string('pipeline_config_path', 'C:/py/Whale_Tail_ObjDet/ssd_inception_v2_coco.config',
+flags.DEFINE_string('pipeline_config_path', 'C:/py/Whale_tail_Detection/rcnn_inception_v2_coco.config',
                     'Path to a pipeline_pb2.TrainEvalPipelineConfig config '
                     'file.')
-flags.DEFINE_string('trained_checkpoint_prefix', 'C:/py/Whale_Tail_ObjDet/train/model.ckpt-500',
+flags.DEFINE_string('trained_checkpoint_prefix', 'C:/py/Whale_tail_Detection/train/model.ckpt-500',
                     'Path to trained checkpoint, typically of the form '
                     'path/to/model.ckpt')
-flags.DEFINE_string('output_directory', 'C:/py/Whale_Tail_ObjDet/IG', 'Path to write outputs.')
+flags.DEFINE_string('output_directory', 'C:/py/Whale_tail_Detection/IG', 'Path to write outputs.')
 
 FLAGS = flags.FLAGS
 

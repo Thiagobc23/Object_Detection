@@ -48,14 +48,12 @@ import tensorflow as tf
 
 from google.protobuf import text_format
 
-from object_detection import model_main
 from object_detection.builders import input_reader_builder
 from object_detection.builders import model_builder
 from object_detection.protos import input_reader_pb2
 from object_detection.protos import model_pb2
 from object_detection.protos import pipeline_pb2
 from object_detection.protos import train_pb2
-from object_detection.utils import config_util
 from object_detection.legacy import trainer
 
 tf.logging.set_verbosity(tf.logging.INFO)
@@ -74,18 +72,18 @@ flags.DEFINE_integer('worker_replicas', 1, 'Number of worker+trainer '
 flags.DEFINE_integer('ps_tasks', 0,
                      'Number of parameter server tasks. If None, does not use '
                      'a parameter server.')
-flags.DEFINE_string('train_dir', 'C:/py/Whale_Tail_ObjDet/train',
+flags.DEFINE_string('train_dir', 'C:/py/Whale_tail_Detection/train',
                     'Directory to save the checkpoints and training summaries.')
 
-flags.DEFINE_string('pipeline_config_path1', 'C:/py/Whale_Tail_ObjDet/ssd_inception_v2_coco.config',
+flags.DEFINE_string('pipeline_config_path1', 'C:/py/Whale_tail_Detection/rcnn_inception_v2_coco.config',
                     'Path to a pipeline_pb2.TrainEvalPipelineConfig config '
                     'file. If provided, other configs are ignored')
 
-flags.DEFINE_string('train_config_path', 'C:/py/Whale_Tail_ObjDet/items_train.record',
+flags.DEFINE_string('train_config_path', 'C:/py/Whale_tail_Detection/items_train.record',
                     'Path to a train_pb2.TrainConfig config file.')
-flags.DEFINE_string('input_config_path', 'C:/py/Whale_Tail_ObjDet/items_val.record',
+flags.DEFINE_string('input_config_path', 'C:/py/Whale_tail_Detection/items_val.record',
                     'Path to an input_reader_pb2.InputReader config file.')
-flags.DEFINE_string('model_config_path', 'C:/py/ObjDetection/ssd_inception_v2_coco_2018_01_28/model.ckpt',
+flags.DEFINE_string('model_config_path', 'C:/py/Whale_tail_Detection/rcnn_inception_v2_coco/model.ckpt',
                     'Path to a model_pb2.DetectionModel config file.')
 
 FLAGS = flags.FLAGS

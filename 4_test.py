@@ -5,14 +5,14 @@ import os
 import tensorflow as tf
 import cv2
 
-from utils import label_map_util
-from utils import visualization_utils as vis_util
+from object_detection.utils import label_map_util
+from object_detection.utils import visualization_utils as vis_util
 from distutils.version import StrictVersion
 
 # module level variables ##############################################################################################
-TEST_IMAGE_DIR = "C:/py/Whale_Tail_ObjDet/images"
-FROZEN_INFERENCE_GRAPH_LOC = "C:/py/Whale_Tail_ObjDet/IG/frozen_inference_graph.pb"
-LABELS_LOC = "C:/py/Whale_Tail_ObjDet/toy_label_map.pbtxt"
+TEST_IMAGE_DIR = "C:/py/Whale_tail_Detection/test"
+FROZEN_INFERENCE_GRAPH_LOC = "C:/py/Whale_tail_Detection/IG/frozen_inference_graph.pb"
+LABELS_LOC = "C:/py/Whale_tail_Detection/label_map.pbtxt"
 NUM_CLASSES = 1
 
 #######################################################################################################################
@@ -37,6 +37,7 @@ def main():
             serialized_graph = fid.read()
             od_graph_def.ParseFromString(serialized_graph)
             tf.import_graph_def(od_graph_def, name='')
+
         # end with
     # end with
 
@@ -53,7 +54,7 @@ def main():
             imageFilePaths.append(TEST_IMAGE_DIR + "/" + imageFileName)
         # end if
     # end for
-
+    counter=0
     with detection_graph.as_default():
         with tf.Session(graph=detection_graph) as sess:
             for image_path in imageFilePaths:
@@ -91,6 +92,17 @@ def main():
                                                                    category_index,
                                                                    use_normalized_coordinates=True,
                                                                    line_thickness=8)
+                height, width = image_np.shape[:2]
+                ymin = boxes[0, 0, 0]*height
+                xmin = boxes[0, 0, 1]*width
+                ymax = boxes[0, 0, 2]*height
+                xmax = boxes[0, 0, 3]*width
+                cropped_image = np.array(image_np[int(ymin):int(ymax), int(xmin):int(xmax)])
+                # save image (Thiago Carvalho)
+                img_name = "image" + str(counter)
+                cv2.imwrite(img_name+".jpg", cropped_image)
+                counter += 1
+                # display image
                 cv2.imshow("image_np", image_np)
                 cv2.waitKey()
             # end for

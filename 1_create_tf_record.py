@@ -40,8 +40,8 @@ from object_detection.utils import dataset_util
 from object_detection.utils import label_map_util
 
 flags = tf.app.flags
-flags.DEFINE_string('data_dir', 'C:/py/Whale_Tail_ObjDet', 'Root directory to raw pet dataset.')
-flags.DEFINE_string('output_dir', 'C:/py/Whale_Tail_ObjDet', 'Path to directory to output TFRecords.')
+flags.DEFINE_string('data_dir', 'C:/py/Whale_tail_Detection', 'Root directory to raw pet dataset.')
+flags.DEFINE_string('output_dir', 'C:/py/Whale_tail_Detection', 'Path to directory to output TFRecords.')
 flags.DEFINE_string('label_map_path', 'label_map.pbtxt',
                     'Path to label map proto')
 FLAGS = flags.FLAGS
