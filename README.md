@@ -54,8 +54,16 @@ Paths need to be defined according to your setup
 Testing scripts were based on the ones available at Priya Dwivedi [GIT](https://github.com/priya-dwivedi/Deep-Learning)
 
 ## 4_test.py  
-Uses images in the testing folder for displaying them with their detected bounding box and the confidence level of the model, it also output a cropped image with just the object of interrest.
+Uses images in the testing folder for displaying them with their detected bounding box and the confidence level of the model, it also output a cropped image with just the object of interrest.  
+
+Detection output:  
+![Imgur](https://i.imgur.com/8Gv1Vum.png)  
+
+Cropped output:  
+![Imgur](https://i.imgur.com/W6Atp0K.jpg)  
 
 ## 5_video_box.py
-Uses a video snippet for breaking it down to images, detecting the object, drawing the boxes and confidence level and reasembling the snippet into another video.
+Uses a video snippet for breaking it down to images, detecting the object, drawing the boxes and confidence level and reasembling the snippet into another video.  
 
+output example:  
+[![Video output](http://img.youtube.com/vi/UNSm_3amiww/3.jpg)](https://youtu.be/UNSm_3amiww)
