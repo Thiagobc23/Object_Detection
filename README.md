@@ -52,10 +52,19 @@ Paths need to be defined according to your setup
 **trained_checkpoint_prefix** -> Last checkpoint model for this project we used project directory/train/model.ckpt-500, the numerical value at the end should match the checkpoint you are using to build the inference graph.  
 **output_directory** -> Path to where the script will output the new model, for this project we used project directory/IG  
 
+## 4_eval.py 
+Run in virtual enviorment terminal  
+python eval.py  
+    --logtostdeer  
+    --checkpoint_dir= PathTo\train  
+    --eval_dir= PathTo\test  
+    --pipeline_config_path=‪ PathTo\IG\pipeline.config  
+  
+
 ---
 Testing scripts were based on the ones available at Priya Dwivedi [GIT](https://github.com/priya-dwivedi/Deep-Learning)
 
-## 4_test.py  
+## 5_display_and_crop.py  
 Uses images in the testing folder for displaying them with their detected bounding box and the confidence level of the model, it also output a cropped image with just the object of interrest.  
 
 Detection output:  
@@ -64,8 +73,8 @@ Detection output:
 Cropped output:  
 ![Imgur](https://i.imgur.com/W6Atp0K.jpg)  
 
-## 5_video_box.py
+## 6_video_box.py
 Uses a video snippet for breaking it down to images, detecting the object, drawing the boxes and confidence level and reasembling the snippet into another video.  
 
 output example:  
-[![Video output](http://img.youtube.com/vi/UNSm_3amiww/3.jpg)](https://youtu.be/UNSm_3amiww)
+[![Video output](http://img.youtube.com/vi/UNSm_3amiww/0.jpg)](https://youtu.be/UNSm_3amiww)
