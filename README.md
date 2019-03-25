@@ -68,10 +68,10 @@ Testing scripts were based on the ones available at Priya Dwivedi [GIT](https://
 Uses images in the testing folder for displaying them with their detected bounding box and the confidence level of the model, it also output a cropped image with just the object of interrest.  
 
 Detection output:  
-![Imgur](https://i.imgur.com/8Gv1Vum.png)  
+![Imgur](https://i.imgur.com/z6sZHOT.png)  
 
 Cropped output:  
-![Imgur](https://i.imgur.com/W6Atp0K.jpg)  
+![Imgur](https://i.imgur.com/grB9cyQ.jpg)  
 
 ## 6_video_box.py
 Uses a video snippet for breaking it down to images, detecting the object, drawing the boxes and confidence level and reasembling the snippet into another video.  
