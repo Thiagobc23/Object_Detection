@@ -55,14 +55,14 @@ Paths need to be defined according to your setup
 ## 4_eval.py 
 Run in virtual enviorment terminal  
 python eval.py  
-    --logtostdeer  
-    --checkpoint_dir= PathTo\train  
-    --eval_dir= PathTo\test  
-    --pipeline_config_path=‪ PathTo\IG\pipeline.config  
+        --logtostdeer  
+        --checkpoint_dir= PathTo\train  
+        --eval_dir= PathTo\test  
+        --pipeline_config_path=‪ PathTo\IG\pipeline.config  
   
 
 ---
-Testing scripts were based on the ones available at Priya Dwivedi [GIT](https://github.com/priya-dwivedi/Deep-Learning)
+Testing scripts were based on the ones from Priya Dwivedi [GIT](https://github.com/priya-dwivedi/Deep-Learning)
 
 ## 5_display_and_crop.py  
 Uses images in the testing folder for displaying them with their detected bounding box and the confidence level of the model, it also outputs a cropped image with just the object of interest.  
