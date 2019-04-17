@@ -54,12 +54,13 @@ Paths need to be defined according to your setup
 
 ## 4_eval.py 
 Run in virtual enviorment terminal  
+```
 python eval.py  
-        --logtostdeer  
-        --checkpoint_dir= PathTo\train  
-        --eval_dir= PathTo\test  
-        --pipeline_config_path=‪ PathTo\IG\pipeline.config  
-  
+--logtostdeer  
+--checkpoint_dir= PathTo\train  
+--eval_dir= PathTo\test  
+--pipeline_config_path=‪ PathTo\IG\pipeline.config  
+```
 
 ---
 Testing scripts were based on the ones from Priya Dwivedi [GIT](https://github.com/priya-dwivedi/Deep-Learning)
